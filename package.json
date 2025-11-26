@@ -1,0 +1,16 @@
+{
+  "name": "universityts",
+  "version": "1.0.0",
+  "description": "Цей репозиторій містить базову конфігурацію проєкту на TypeScript із прикладом простого коду. Проєкт створено для відпрацювання роботи з гілками Git, конфігураційним файлом `tsconfig.json` та компіляцією коду з `src` у директорію `dist`.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
