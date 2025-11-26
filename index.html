@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>Демо TypeScript сторінки</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<header class="site-header" id="site-header">
+    <div class="container header-content">
+        <h1 class="site-logo">TS Demo Store</h1>
+        <nav class="nav-links">
+            <a href="#hero" class="nav-link">Головна</a>
+            <a href="#posts" class="nav-link">Пости</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="hero" class="hero-block">
+        <div class="container hero-layout">
+            <div class="hero-text">
+                <h2>Практична робота №2</h2>
+                <p>
+                    Ця сторінка побудована на основі простого HTML/CSS шаблону та
+                    доповнена інтерактивною логікою на TypeScript.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn primary" id="open-modal-btn">
+                        Показати модальне вікно
+                    </button>
+                    <button class="btn secondary" id="load-posts-btn">
+                        Завантажити пости
+                    </button>
+                </div>
+            </div>
+            <div class="hero-card">
+                <p class="hero-badge">Scroll + Click + Fetch</p>
+                <p class="hero-desc">
+                    При прокручуванні сторінки змінюється шапка, а також можна
+                    підвантажити пости з JSONPlaceholder.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="posts-section" id="posts-section">
+        <div class="container">
+            <h3>Пости з JSONPlaceholder</h3>
+            <ul class="posts-list" id="posts"></ul>
+        </div>
+    </section>
+</main>
+
+<!-- Модальне вікно -->
+<div class="modal-overlay" id="modal-overlay">
+    <div class="modal-window">
+        <button class="modal-close" data-close-modal>&times;</button>
+        <h4>Модальне вікно</h4>
+        <p>
+            Це модальне повідомлення зʼявляється по натисканню кнопки та
+            закривається по кліку на хрестик, фон або клавішу Escape.
+        </p>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>Практична 2 • TypeScript + DOM + Fetch</p>
+    </div>
+</footer>
+
+<!-- Підключаємо скомпільований JS-файл -->
+<script type="module" src="./dist/main.js"></script>
+</body>
+</html>
